@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import TabItem from './navigation/TabItem';
 import { HomeSvg, PromosSvg, SmartClubSvgTab, ListeSvg, DriveSvg, ProfilSvg } from './iconSVG/IconsSvg';
+import BottomNavigationStyles from '@/styles/BottomNavigationStyles';
 
 
 
@@ -24,7 +25,7 @@ const BottomNavigation = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={BottomNavigationStyles.container}>
       {tabs.map((tab, index) => (
         <TabItem
           key={index}
@@ -39,34 +40,3 @@ const BottomNavigation = () => {
 };
 
 export default BottomNavigation;
-
-const styles = StyleSheet.create({
-  container: {
-    height: 55,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-    paddingVertical: 10,
-    borderTopWidth: 1,
-    borderTopColor: '#ccc',
-  },
-  tab: {
-    alignItems: 'center',
-  },
-  iconContainer: {
-    marginBottom: 5,
-  },
-  icon: {
-    width: 24,
-    height: 24,
-  },
-  label: {
-    fontSize: 12,
-    color: '#000080',  
-  },
-  activeLabel: {
-    color: '#bd2c68',  
-  },
-});
-

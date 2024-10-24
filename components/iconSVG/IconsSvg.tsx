@@ -1,5 +1,4 @@
-import Svg, { ClipPath, Defs, Ellipse, G, Path } from "react-native-svg";
-
+import Svg, { Ellipse,  Path } from "react-native-svg";
 
 
 
