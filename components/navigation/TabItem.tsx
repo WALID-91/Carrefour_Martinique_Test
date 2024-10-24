@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import TabItemStyles from '@/styles/TabItemStyles'; // Importation des styles extraits
 
 interface TabItemProps {
     label: string;
@@ -8,19 +9,20 @@ interface TabItemProps {
     handleTabPress: () => void;
 }
 
-const TabItem = (props: TabItemProps) => {
-    const { label, isActive, SvgIcon, handleTabPress } = props;
-
+const TabItem = ({ label, isActive, SvgIcon, handleTabPress }: TabItemProps) => {
     return (
-        <TouchableOpacity style={{ alignItems: 'center', width:60, backgroundColor: isActive ? "#bd2c6840" : "transparent", borderRadius: 5}} onPress={handleTabPress}  >
-            <View style={{ marginBottom: 5 }}>
+        <TouchableOpacity 
+            style={[TabItemStyles.container, isActive && TabItemStyles.activeContainer]} 
+            onPress={handleTabPress}
+        >
+            <View style={TabItemStyles.iconContainer}>
                 <SvgIcon isActive={isActive} />
             </View>
-            <Text style={{ fontSize: 10 , color: isActive ? '#bd2c68' : '#000080' }}>
+            <Text style={[TabItemStyles.label, isActive ? TabItemStyles.activeLabel : TabItemStyles.inactiveLabel]}>
                 {label}
             </Text>
         </TouchableOpacity>
     );
 };
 
-export default TabItem;
+export default React.memo(TabItem);
