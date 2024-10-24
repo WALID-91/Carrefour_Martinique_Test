@@ -1,12 +1,12 @@
 # Carrefour Martinique
 
-Bienvenue dans l'application **Carrefour Martinique**, une application mobile construite avec **React Native** et **Expo**. Cette application affiche des promotions via un carrousel interactif, avec une navigation fluide entre différentes sections. Elle inclut également des appels API pour récupérer des données dynamiques, notamment des promotions en temps réel.
+Bienvenue dans l'application **Carrefour Martinique**, une application mobile construite avec **React Native** et **Expo**. Cette application affiche des News via un carrousel interactif. Elle inclut également des appels API pour récupérer des données dynamiques, notamment des News en temps réel.
 
 
 ## Fonctionnalités
 
 - **Carrousel interactif** : Affichage des promotions sous forme de carrousel, avec pagination.
-- **Navigation fluide avec Bottom Tabs** : Naviguez facilement entre les sections Accueil, Promos, et Smart Club.
+- **Bottom Tabs** : Présentation du Bottom Tab.
 - **Icônes SVG personnalisées** : Utilisation d'icônes SVG pour chaque section, avec des changements visuels basés sur l'état actif.
 - **Intégration API** : Récupération en temps réel des news via des appels à une API REST.
 
@@ -14,7 +14,7 @@ Bienvenue dans l'application **Carrefour Martinique**, une application mobile co
 
 - **React Native** : Framework pour le développement mobile.
 - **Expo** : Outil pour simplifier le développement React Native.
-- **react-native-reanimated-carousel** : Gestion du carrousel de promotions.
+- **react-native-reanimated-carousel** : Gestion du carrousel de news.
 - **react-native-responsive-screen** : Gestion de la mise en page en fonction des dimensions de l'écran.
 - **react-native-svg** : Utilisation des icônes SVG dans l'application.
 
