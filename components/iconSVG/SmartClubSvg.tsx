@@ -2,12 +2,12 @@ import * as React from "react"
 import { View, Text, StyleSheet } from "react-native";
 import Svg, { Path } from "react-native-svg"
 
-function SmartClubSvg() {
+const SmartClubSvg = () => {
 
     return (
         <View>
             <View>
-            <View style={styles.smallRect} />
+                <View style={styles.smallRect} />
 
                 <Svg
                     width="70px"
@@ -30,7 +30,7 @@ function SmartClubSvg() {
                         transform="matrix(.1 0 0 -.1 0 250)"
                     />
                 </Svg>
-                <Text style={{ fontSize: 12, fontFamily: "cursive", fontWeight: "700", bottom: 5, color:"#bd2c68" }} >{"Bonjour Jean-batiste !"}</Text>
+                <Text style={{ fontSize: 12, fontFamily: "cursive", fontWeight: "700", bottom: 5, color:"#bd2c68" }} >{"Bonjour Jean-Batiste !"}</Text>
 
             </View>
             

@@ -5,12 +5,15 @@ import SmartClubSvg from './iconSVG/SmartClubSvg';
 const HeaderIcons = () => {
   return (
     <View style={styles.headerContainer}>
-      <View>
+      {/* smartClub Icon + Prix */}
+      <View style={styles.smartClub}>
         <View style={styles.priceContainer}>
           <Text style={styles.priceText}>{"0.00€"}</Text>
         </View>
         <SmartClubSvg />
       </View>
+      {/* Carrefour Icon */}
+
       <Image
         source={require('../assets/images/logoCarrefourMartinique.png')}
         style={styles.logo}
@@ -43,9 +46,12 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   logo: {
-    width: 60,
-    height: 60,
+    width: "22%",
+    height: "95%",
   },
+  smartClub: {
+    alignItems: 'center',
+  }
 });
 
 export default HeaderIcons;
